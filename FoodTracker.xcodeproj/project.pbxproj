@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14876CC122CC0EB600C8C6FF /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14876CC022CC0EB600C8C6FF /* RatingControl.swift */; };
 		8485151A22C7CEE8004E0CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485151922C7CEE8004E0CCA /* AppDelegate.swift */; };
 		8485151C22C7CEE8004E0CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485151B22C7CEE8004E0CCA /* ViewController.swift */; };
 		8485151F22C7CEE8004E0CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485151D22C7CEE8004E0CCA /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14876CC022CC0EB600C8C6FF /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		8485151622C7CEE8004E0CCA /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8485151922C7CEE8004E0CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8485151B22C7CEE8004E0CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14876CBF22CC0E7E00C8C6FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8485151B22C7CEE8004E0CCA /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14876CC322CC0EDA00C8C6FF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				14876CC022CC0EB600C8C6FF /* RatingControl.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		8485150D22C7CEE8004E0CCA = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +95,9 @@
 		8485151822C7CEE8004E0CCA /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				14876CC322CC0EDA00C8C6FF /* Controls */,
+				14876CBF22CC0E7E00C8C6FF /* ViewControllers */,
 				8485151922C7CEE8004E0CCA /* AppDelegate.swift */,
-				8485151B22C7CEE8004E0CCA /* ViewController.swift */,
 				8485151D22C7CEE8004E0CCA /* Main.storyboard */,
 				8485152022C7CEE9004E0CCA /* Assets.xcassets */,
 				8485152222C7CEE9004E0CCA /* LaunchScreen.storyboard */,
@@ -198,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8485151C22C7CEE8004E0CCA /* ViewController.swift in Sources */,
+				14876CC122CC0EB600C8C6FF /* RatingControl.swift in Sources */,
 				8485151A22C7CEE8004E0CCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
