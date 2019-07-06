@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Meal Table View Controller-->
         <scene sceneID="w3O-E1-ToA">
             <objects>
-                <tableViewController id="CNo-LR-xJ0" sceneMemberID="viewController">
+                <tableViewController id="CNo-LR-xJ0" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kRN-M7-Nn0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="clK-Hw-km8" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="clK-Hw-km8" userLabel="rating control" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                             <rect key="frame" x="98" y="35" width="252" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
@@ -53,6 +53,11 @@
                                         <constraint firstItem="W17-WP-idF" firstAttribute="top" secondItem="Kii-hb-EsA" secondAttribute="top" id="f6D-Ez-IPz"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="PsD-cZ-qOc" id="wek-2z-Vwu"/>
+                                    <outlet property="photoImageView" destination="W17-WP-idF" id="SFU-vN-Nwd"/>
+                                    <outlet property="ratingControl" destination="clK-Hw-km8" id="rUw-PQ-M2c"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
