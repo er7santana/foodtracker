@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="300" y="100.29985007496252"/>
         </scene>
-        <!--Meal View Controller-->
+        <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,14 +129,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qdQ-Mg-YzM"/>
+                    <navigationItem key="navigationItem" title="New Meal" id="qdQ-Mg-YzM">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="eQz-Gk-cpO">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="OHD-Mo-uSa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Cff-zf-YNl">
+                            <connections>
+                                <segue destination="MuZ-Ae-XRM" kind="unwind" unwindAction="unwindToMealListWithSender:" id="40M-dK-PhN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="cVN-YX-XMn" id="xkA-i0-411"/>
                         <outlet property="photoImageView" destination="CU4-t5-QhZ" id="Aih-61-1Ak"/>
                         <outlet property="ratingControl" destination="xaD-qC-DTs" id="RNr-It-swc"/>
+                        <outlet property="saveButton" destination="Cff-zf-YNl" id="tPG-vC-Yaz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="MuZ-Ae-XRM" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="4ur-iO-uek">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="fi9-pt-SGj"/>
