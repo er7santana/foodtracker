@@ -27,6 +27,8 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.delegate = self
+        photoImageView.layer.cornerRadius = 20
+        photoImageView.clipsToBounds = true
         
         if let meal = meal {
             navigationItem.title = meal.name

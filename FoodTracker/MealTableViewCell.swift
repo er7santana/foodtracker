@@ -18,6 +18,9 @@ class MealTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        photoImageView.isCircle()
+        photoImageView.addBorder(1.0, UIColor.lightGray.cgColor)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
